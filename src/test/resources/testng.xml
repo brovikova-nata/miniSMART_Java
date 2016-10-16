@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" >
+    <parameter name="producer"  value="samsung" />
+    <parameter name="price-from"  value="0" />
+    <parameter name="price-to"  value="800" />
+    <parameter name="priceyear"  value="2013" />
+    <parameter name="valuediagfrom"  value="39" />
+    <parameter name="valuediagto"  value="42" />
+    <test name="Test" >
+        <classes>
+            <class name="test.search.Test" />
+        </classes>
+    </test>
+</suite>
