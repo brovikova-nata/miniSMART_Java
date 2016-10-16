@@ -20,9 +20,9 @@ public class CheckBox extends BaseElement{
     }
 
     public void check() {
-        //if(!this.element.isSelected()) {
+        if(!this.element.isSelected()) {
             this.element.click();
-        //}
+        }
 
     }
 

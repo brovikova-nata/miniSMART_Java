@@ -194,12 +194,6 @@ public final class Browser {
 	}
 
 
-	public void waitFor() {
-		WebDriverWait wait = new WebDriverWait(driver, 3600);
-		wait.withTimeout(3600, TimeUnit.SECONDS);
-
-		}
-
 
 	
 	

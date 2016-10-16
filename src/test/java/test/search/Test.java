@@ -19,28 +19,27 @@ public class Test extends BaseRealTest {
         logger.step(3);
         sf.ClickTV();
 
-        //logger.step(4);
-        //sf.assertHeader();
-
-        logger.step(5);
+        logger.step(4);
         FilterForm ff = new FilterForm();
         ff.ClickCheckboxproducer(producer);
 
-        logger.step(6);
+        logger.step(5);
         ff.SendPricefrom(pricefrom);
 
-        logger.step(7);
+        logger.step(6);
         ff.SendPriceto(priceto);
 
-        logger.step(8);
+        logger.step(7);
         ff.SendPriceYear(priceyear);
 
-        logger.step(9);
+        logger.step(8);
         ff.Selectdiagfrom(valuediagfrom);
 
-        logger.step(10);
+        logger.step(9);
         ff.Selectdiagto(valuediagto);
 
+        logger.step(10);
+        ff.assertHeader();
 
         logger.step(11);
         ff.checkParameters_the_first_page_title(producer);

@@ -18,12 +18,9 @@ public class FirstForm extends BaseForm  {
     private Button btnSubmitTV = new Button(By.xpath(" //div[@class='catalog-bar']//a[contains(., 'Телевизоры')]"), "TV");
 
 
-    //private CheckBox chProducer = new CheckBox(By.xpath("//ul[@class='schema-filter__list']//input[@type='checkbox'][@value='" + i + " ']/.."),"Checkbox Producer");
     public FirstForm() {
         super(By.id("fast-search"), "Onliner");
     }
-
-
 
 
 
@@ -41,14 +38,7 @@ public class FirstForm extends BaseForm  {
     public void ClickTV() {
         btnSubmitTV.click();
         browser.waitForPageToLoad();
-        //browser.getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-    }
-
-
-    public void assertHeader() {
-        Text textHeader = new Text(By.xpath("//div[@id='container']//h1[contains(., 'Телевизоры')]"), "Text Header TV");
-        assert (textHeader.isPresent());
     }
 
 
